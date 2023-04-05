@@ -1,0 +1,94 @@
+{
+    "produtos": [
+        {
+          "name": "Sapato Masculino",
+          "photo": "/assets/img/produtos/sapato.png",
+          "price": 500.00,
+          "id": 1,
+          "category": {
+            "id": 1,
+            "label": "masculino"
+          }
+        },
+        {
+            "name": "Sapato Feminino",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 200.00,
+            "id": 2,
+            "category": {
+              "id": 2,
+              "label": "Feminino"
+            }
+        },
+        {
+            "name": "Sapato Infantil",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 300.00,
+            "id": 3,
+            "category": {
+              "id": 3,
+              "label": "Infantil"
+            }
+        },
+        {
+            "name": "Sapato Masculino",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 500.00,
+            "id": 4,
+            "category": {
+              "id": 1,
+              "label": "masculino"
+            }
+        },
+        {
+            "name": "Sapato Feminino",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 500.00,
+            "id": 5,
+            "category": {
+              "id": 2,
+              "label": "Feminino"
+            }
+        },
+        {
+            "name": "Sapato Infantil",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 500.00,
+            "id": 6,
+            "category": {
+              "id": 3,
+              "label": "Infantil"
+            }
+        },
+        {
+            "name": "Sapato Masculiino",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 500.00,
+            "id": 7,
+            "category": {
+              "id": 1,
+              "label": "masculino"
+            }
+        },
+        {
+            "name": "Sapato Feminino",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 500.00,
+            "id": 8,
+            "category": {
+              "id": 2,
+              "label": "Feminino"
+            }
+        },
+        {
+            "name": "Sapato Infantil",
+            "photo": "/assets/img/produtos/sapato.png",
+            "price": 500.00,
+            "id": 9,
+            "category": {
+              "id": 3,
+              "label": "Infantil"
+            }
+        }
+      ]
+}
