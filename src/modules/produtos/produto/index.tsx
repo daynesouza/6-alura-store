@@ -14,6 +14,8 @@ export default function Produto( props: Iproduto){
     const [carrinho, setCarrinho] = useRecoilState(listaDeComprasState);
     const [saldo, setSaldo] = useRecoilState(saldoTotalState);
 
+    const carrinhoNovo: Icarrinho | undefined = [...carrinho];
+
     function adicionarCarrinho(){
         if(verificaCarrinhoVazio()){
             setCarrinho([produto])
@@ -21,10 +23,15 @@ export default function Produto( props: Iproduto){
         }
 
         const carrinhoAtual = carrinho.map( (item) => {
-            if(item.id === id){  
-                return item.quantidade++
+           if(item.id === id){  
+                return {
+                    ...item,
+                    quantidade: quantidade + 1
+                }
             }
         })
+        setCarrinho([...carrinhoAtual, produto])
+        setSaldo(saldo+price)
 
        //return setCarrinho([...carrinhoAtual, produto])
        
