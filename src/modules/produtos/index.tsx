@@ -1,16 +1,18 @@
-import produtos from './produtos.json';
+import { useRecoilValue } from 'recoil';
 import style from './Produtos.module.scss';
-import Produto from './produto';
 
-import { useState } from 'react';
+import { listaDeProdutosState } from 'state/atom';
+import Produto from './produto';
 
 
 export default function Produtos(){
-    const [lista, setlista] = useState(produtos);
+
+    const produtos = useRecoilValue(listaDeProdutosState) //Recupera o valor 
+
     return (
         <div className={style.produtos}>
-            {lista.map( produto => (
-                <Produto key={produto.id} {...produto}/>
+            {produtos.map( produto => (
+                <Produto key={`lista${produto.id}`} {...produto}/>
             ))}
         </div>
     );

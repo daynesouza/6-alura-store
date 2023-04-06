@@ -1,0 +1,43 @@
+@import '../../styles/_variaveis.scss';
+
+.carrinho{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}
+.carrinho__titulo{
+    font-size: 48px;
+}
+
+.item{
+    align-items: center;
+    background-color: $main__carrinho__item--backgroundColor;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0rem;
+    width: 100%;
+}
+.item__img{
+    height: 100px;
+}
+
+.item__text{
+    font-size: 36px;
+    text-align: center;
+}
+.item__btn{
+    font-size: 36px;
+}
+.carrinho__saldo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.carrinho__saldo__text{
+    font-size: 36px;
+    color: $main__carrinho__saldo--fontColor;
+}

@@ -1,9 +1,16 @@
-@import "styles/_variaveis.scss";
+@import "../../styles/_variaveis.scss";
 
-.produtos{
+/* .produtos{
     display: grid;
     column-gap: 5%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     row-gap: 5rem;
+}
+ */
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2rem;
 }

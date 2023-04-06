@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import style from './header.module.scss';
+import style from './Header.module.scss';
 import logo from 'assets/logo.svg';
 import { CgSearch } from 'react-icons/cg'
 import { BsCartDash } from 'react-icons/bs'

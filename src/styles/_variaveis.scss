@@ -1,3 +1,12 @@
+/*Global*/
+:root{
+--fontColor: #FFFEFE;
+}
+//Button
+$fontColor: #000000;
+$backgroundColor: #78CB99;
+
+
 /*Página Home*/
 //Header
 $header--backgroundColor: #000000;
@@ -6,11 +15,17 @@ $header__menu__buscador--color: #E4E4E4;
 
 //Main
 $main--backgroundColor: #DEDEDE;
-$main__produto--backgroundColor: #FFFFFF;
+$main__produto--backgroundColor: #1E1E1E;
 $main__produto__text--color:#FFFFFF;
-$main__produto__text--masculino--backgroundColor:#3A3A3A;
-$main__produto__text--feminino--backgroundColor:#853C3C;
-$main__produto__text--infantil--backgroundColor:#887492;
+    //Lista produtos
+    $main__produto__text--masculino--backgroundColor:#3A3A3A;
+    $main__produto__text--feminino--backgroundColor:#853C3C;
+    $main__produto__text--infantil--backgroundColor:#887492;
+    
+    //Carrinho
+    $main__carrinho--backgroundColor: #FFFFFF;
+    $main__carrinho__item--backgroundColor: #DEDEDE;
+    $main__carrinho__saldo--fontColor: #000000;
 
 //Footer
 $footer--backgroundColor: #000000;

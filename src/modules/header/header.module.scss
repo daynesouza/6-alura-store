@@ -1,4 +1,4 @@
-@import "styles/_variaveis.scss";
+@import '../../styles/_variaveis.scss';
 
 /*Header*/
 .header{
@@ -14,6 +14,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+.cabecalho__link{
+    color: $header__menu__buscador--color;
 }
 //Buscador
 .cabecalho__links--pesquisa{

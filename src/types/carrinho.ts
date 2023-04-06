@@ -1,7 +1,7 @@
-export interface Iproduto{
+export interface Icarrinho{
     name: string,
     photo: string,
     price: number,
     id: number,
-    category: any,
+    quantidade: number,
 }

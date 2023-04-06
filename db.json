@@ -1,93 +1,93 @@
 {
     "produtos": [
         {
-          "name": "Sapato Masculino",
-          "photo": "/assets/img/produtos/sapato.png",
-          "price": 500.00,
+          "name": "AC Vallhala",
+          "photo": "/assets/img/produtos/ACValhalla.jpg",
+          "price": 250.00,
           "id": 1,
           "category": {
             "id": 1,
-            "label": "masculino"
+            "label": "xbox"
           }
         },
         {
-            "name": "Sapato Feminino",
-            "photo": "/assets/img/produtos/sapato.png",
-            "price": 200.00,
+            "name": "Bioshock 2",
+            "photo": "/assets/img/produtos/bioshock2.jpg",
+            "price": 50.00,
             "id": 2,
             "category": {
               "id": 2,
-              "label": "Feminino"
+              "label": "playstation"
             }
         },
         {
-            "name": "Sapato Infantil",
-            "photo": "/assets/img/produtos/sapato.png",
+            "name": "Demon Souls",
+            "photo": "/assets/img/produtos/demonSouls.jpg",
             "price": 300.00,
             "id": 3,
             "category": {
-              "id": 3,
-              "label": "Infantil"
+              "id": 2,
+              "label": "playstation"
             }
         },
         {
-            "name": "Sapato Masculino",
-            "photo": "/assets/img/produtos/sapato.png",
-            "price": 500.00,
+            "name": "Doom",
+            "photo": "/assets/img/produtos/doom.jpg",
+            "price": 150.00,
             "id": 4,
             "category": {
-              "id": 1,
-              "label": "masculino"
+              "id": 2,
+              "label": "playstation"
             }
         },
         {
-            "name": "Sapato Feminino",
-            "photo": "/assets/img/produtos/sapato.png",
-            "price": 500.00,
+            "name": "Far Cry 6",
+            "photo": "/assets/img/produtos/farcry6.jpg",
+            "price": 200.00,
             "id": 5,
             "category": {
-              "id": 2,
-              "label": "Feminino"
+              "id": 1,
+              "label": "xbox"
             }
         },
         {
-            "name": "Sapato Infantil",
-            "photo": "/assets/img/produtos/sapato.png",
-            "price": 500.00,
+            "name": "Horizon",
+            "photo": "/assets/img/produtos/horizon.jpg",
+            "price": 100.00,
             "id": 6,
             "category": {
-              "id": 3,
-              "label": "Infantil"
+              "id": 2,
+              "label": "playstation"
             }
         },
         {
-            "name": "Sapato Masculiino",
-            "photo": "/assets/img/produtos/sapato.png",
-            "price": 500.00,
+            "name": "Kingdom Heart",
+            "photo": "/assets/img/produtos/kingdomHearts.jpeg",
+            "price": 50.00,
             "id": 7,
             "category": {
-              "id": 1,
-              "label": "masculino"
+              "id": 2,
+              "label": "playstation"
             }
         },
         {
-            "name": "Sapato Feminino",
-            "photo": "/assets/img/produtos/sapato.png",
-            "price": 500.00,
+            "name": "Genesis",
+            "photo": "/assets/img/produtos/sonic.jpg",
+            "price": 20.00,
             "id": 8,
             "category": {
               "id": 2,
-              "label": "Feminino"
+              "label": "playstation"
             }
         },
         {
-            "name": "Sapato Infantil",
-            "photo": "/assets/img/produtos/sapato.png",
+            "name": "Watch Dogs",
+            "photo": "/assets/img/produtos/watchDogs.jpg",
             "price": 500.00,
             "id": 9,
             "category": {
-              "id": 3,
-              "label": "Infantil"
+              "id": 1,
+              "label": "xbox"
             }
         }
       ]
