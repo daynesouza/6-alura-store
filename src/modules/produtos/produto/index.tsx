@@ -1,56 +1,13 @@
 import style from './Produto.module.scss';
 import classNames from 'classnames';
+import adicionarCarrinho from 'modules/AdicionarProduto';
 import Button from 'modules/button';
-import { useRecoilState } from 'recoil';
-import { listaDeComprasState, saldoTotalState } from 'state/atom';
-import { Icarrinho } from 'types/carrinho';
 import { Iproduto } from 'types/produto';
 
 export default function Produto( props: Iproduto){
     const { name, photo, price, id, category } = props;
     const quantidade = 1;
-    const produto = {name, photo, price, id, quantidade}
-
-    const [carrinho, setCarrinho] = useRecoilState(listaDeComprasState);
-    const [saldo, setSaldo] = useRecoilState(saldoTotalState);
-
-    const carrinhoNovo: Icarrinho | undefined = [...carrinho];
-
-    function adicionarCarrinho(){
-        if(verificaCarrinhoVazio()){
-            setCarrinho([produto])
-            setSaldo(saldo+price)
-        }
-
-        const carrinhoAtual = carrinho.map( (item) => {
-           if(item.id === id){  
-                return {
-                    ...item,
-                    quantidade: quantidade + 1
-                }
-            }
-        })
-        setCarrinho([...carrinhoAtual, produto])
-        setSaldo(saldo+price)
-
-       //return setCarrinho([...carrinhoAtual, produto])
-       
-        /* carrinhoAtual.forEach( (item) => {
-            if(item.id === id){  
-                item.quantidade++              
-                console.log(item.quantidade++)
-            }else{
-                setCarrinho([...carrinhoAtual, produto])
-            }
-        })
-        setSaldo(saldo+price) */
-    }
-
-    function verificaCarrinhoVazio(){
-        if (carrinho.length === 0){
-            return true
-        }
-    }
+    const produtoCarrinho = {name, photo, price, id, quantidade}
 
     return (
         <div className={style.produto}>
@@ -68,7 +25,7 @@ export default function Produto( props: Iproduto){
             <Button 
                 key= {id}
                 name="Comprar"
-                onClick={ () => adicionarCarrinho() }
+                onClick={ () => adicionarCarrinho(produtoCarrinho) }
             />
         </div>
     )
